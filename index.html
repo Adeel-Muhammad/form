@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset{
+            width: 60%;
+            margin: 0 auto;
+        }
+        legend{
+            text-align: center;
+        }
+    </style>
+    
+</head>
+<body>
+    <form action="./Chapter1.html" method="get">
+        <fieldset>
+            <legend>Admission Form</legend>
+            <label for="username"> Enter Your Name
+                <input type="text" id="usernsme" name="name" required="required" placeholder="Enter Your Name">
+            </label><br>
+            <label for="fathername">Enter Your fathername
+                <input type="text" id="fathername" name="fathername" required="required" placeholder="Enter Your fathername">
+            </label><br>
+            <label for="qualification">please select Your Education
+ <input type="radio" id="qualification" name="qualification" checked >
+ Matric
+ <input type="radio" id="qualification" name="qualification"  >
+ Intermediate
+ <input type="radio" id="qualification" name="qualification"  >
+ Graduation
+            </label>
+            <br>
+            <label for="choces">Enter yor Subjects
+                <input type="checkbox" id="choices" name="choices">
+                Physics
+                <input type="checkbox" id="choices" name="choices">
+                Chemistry <input type="checkbox" id="choices" name="choices">
+                Maths <input type="checkbox" id="choices" name="choices">
+                Computer Science <input type="checkbox" id="choices" name="choices">
+                Biology
+            </label>
+            <br>
+            <label for="feedback">Give your feedback
+                <textarea name="" id="feedback" cols="30" rows="10"></textarea>
+            </label>
+            <br>
+            <input type="submit" value="submit it">
+        </fieldset>
+    </form>
+</body>
+</html>
